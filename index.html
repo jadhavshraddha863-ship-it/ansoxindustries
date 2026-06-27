@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ansox Industries Pvt Ltd</title>
+<title>Ansox Industries Pvt. Ltd.</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,245 +15,172 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#f4fbfb;
+background:#fff;
 color:#222;
 line-height:1.6;
 }
 
-/* HEADER */
-
-header{
-background:linear-gradient(135deg,#dff6ff,#dfffea);
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+img{
+max-width:100%;
+display:block;
 }
 
-.logo{
-font-size:28px;
-font-weight:700;
-color:#0d5c75;
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
 }
 
-nav a{
-margin-left:25px;
-text-decoration:none;
-font-weight:500;
-color:#145c5c;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#22aa88;
-}
-
-/* HERO SECTION */
+/* HERO */
 
 .hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600');
-background-size:cover;
-background-position:center;
+position:relative;
+height:100vh;
+background:url('images/building.jpg') center center/cover no-repeat;
 display:flex;
-align-items:center;
-padding:0 8%;
-color:white;
+align-items:flex-start;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.30);
 }
 
 .hero-content{
-max-width:650px;
+position:relative;
+z-index:2;
+padding-top:70px;
+color:#fff;
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:20px;
-line-height:1.1;
+font-size:56px;
+font-weight:700;
+letter-spacing:1px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
-color:#e9fdfd;
+font-size:24px;
+font-weight:300;
+margin-top:10px;
 }
 
-.hero button{
-padding:15px 35px;
-border:none;
-background:#4dd0a8;
-color:white;
-font-size:17px;
-border-radius:40px;
-cursor:pointer;
-transition:0.3s;
-font-weight:600;
-}
-
-.hero button:hover{
-background:#20b486;
-transform:translateY(-3px);
-}
-
-/* ABOUT */
+/* SECTION */
 
 .section{
-padding:90px 8%;
+padding:90px 0;
 }
 
-.section-title{
-text-align:center;
-margin-bottom:60px;
-}
-
-.section-title h2{
-font-size:40px;
-color:#0d5c75;
-margin-bottom:15px;
-}
-
-.section-title p{
-color:#666;
-font-size:18px;
-}
-
-.about-grid{
+.grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:60px;
 align-items:center;
 }
 
-.about-grid img{
+h2{
+font-size:48px;
+font-weight:600;
+line-height:1.2;
+margin-bottom:30px;
+}
+
+.blue{
+color:#00AEEF;
+}
+
+.text{
+font-size:21px;
+font-weight:300;
+}
+
+.visit{
+padding-top:40px;
+}
+
+.visit p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+form{
+max-width:500px;
+}
+
+input{
 width:100%;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
-.about-text h3{
-font-size:32px;
+padding:18px;
+border-radius:8px;
+border:1px solid #bbb;
 margin-bottom:20px;
-color:#0d5c75;
+font-size:16px;
 }
 
-.about-text p{
-margin-bottom:20px;
-color:#555;
+button{
+width:100%;
+padding:18px;
+border:none;
+border-radius:40px;
+background:#000;
+color:#fff;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
 }
 
-/* PRODUCTS */
-
-.products{
-background:#ecfffb;
+button:hover{
+background:#00AEEF;
 }
 
-.product-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:18px;
-transition:0.3s;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:15px;
-color:#0d5c75;
-}
-
-.card p{
+.note{
+font-size:12px;
+margin-top:10px;
 color:#666;
 }
 
-/* STATS */
-
-.stats{
-background:linear-gradient(135deg,#0d5c75,#22aa88);
-color:white;
-padding:70px 8%;
-}
-
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:40px;
-text-align:center;
-}
-
-.stats h2{
-font-size:45px;
-margin-bottom:10px;
-}
-
-/* CONTACT */
-
-.contact-box{
-background:white;
-padding:50px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-max-width:900px;
-margin:auto;
-text-align:center;
-}
-
-.contact-box h3{
-font-size:35px;
-margin-bottom:20px;
-color:#0d5c75;
-}
-
-.contact-box p{
-margin-bottom:15px;
-font-size:18px;
-}
-
-/* FOOTER */
-
-footer{
-background:#083344;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:40px;
+.round-image{
+border-radius:50%;
+overflow:hidden;
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-.hero h1{
-font-size:42px;
+.hero{
+height:70vh;
 }
 
-.about-grid{
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.grid{
 grid-template-columns:1fr;
 }
 
-header{
-flex-direction:column;
+h2{
+font-size:34px;
 }
 
-nav{
-margin-top:15px;
+.text{
+font-size:18px;
+}
+
+.visit p{
+font-size:20px;
 }
 
 }
@@ -263,193 +188,109 @@ margin-top:15px;
 </style>
 
 </head>
-
 <body>
 
-<header>
-
-<div class="logo">
-ANSOX
-</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="overlay"></div>
 
-<h1>
-Engineering Future Industrial Solutions
-</h1>
+<div class="container hero-content">
+
+<h1>ANSOX INDUSTRIES PVT. LTD.</h1>
+
+<p>Engineering Excellence. Delivering Trust.</p>
+
+</div>
+
+</section>
+
+<!-- VISION -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="grid">
+
+<div>
+
+<h2>
+<span class="blue">Our Vision</span>
+</h2>
+
+<p class="text">
+
+To become a globally recognized leader in manufacturing by continually pushing the boundaries of precision, flexibility, and innovation.
+
+<br><br>
+
+We aspire to be the go-to partner for businesses across diverse industries, delivering unparalleled client satisfaction and setting new standards of excellence in the market.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="images/factory.jpg" alt="Factory">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAILING SECTION -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="grid">
+
+<div class="visit">
 
 <p>
-Advanced Electrical, Solar and Industrial Automation Solutions
-for modern industries and infrastructure.
+
+Visit us today to stay curious, stay informed, and stay connected to the ideas shaping our future.
+
 </p>
+
+<form>
+
+<input type="email" placeholder="Enter your email">
 
 <button>
-Explore Products
+
+Join Mailing List
+
 </button>
 
-</div>
+<div class="note">
 
-</section>
-
-<section class="section" id="about">
-
-<div class="section-title">
-
-<h2>About Us</h2>
-
-<p>
-Innovative Manufacturing & Engineering Excellence
-</p>
+Your information is kept private.
 
 </div>
 
-<div class="about-grid">
+</form>
 
-<img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1200">
+</div>
 
-<div class="about-text">
+<div class="round-image">
 
-<h3>
-Ansox Industries Pvt Ltd
-</h3>
+<img src="images/products.jpg" alt="Products">
 
-<p>
-Ansox Industries delivers high-quality industrial, electrical,
-solar and automation engineering solutions with innovation,
-precision and reliability.
-</p>
-
-<p>
-We focus on advanced manufacturing technologies,
-industrial automation systems, solar energy solutions,
-and customized engineering products for industries worldwide.
-</p>
+</div>
 
 </div>
 
 </div>
 
 </section>
-
-<section class="section products" id="products">
-
-<div class="section-title">
-
-<h2>Our Products</h2>
-
-<p>
-Reliable & Advanced Engineering Products
-</p>
-
-</div>
-
-<div class="product-grid">
-
-<div class="card">
-
-<h3>Solar Pump Controllers</h3>
-
-<p>
-Efficient and intelligent solar pumping solutions for agriculture and industry.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Busbar Bending Machines</h3>
-
-<p>
-Precision engineered busbar processing machines for industrial applications.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Electrical Panels</h3>
-
-<p>
-Customized electrical control panels with advanced protection systems.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Automation Systems</h3>
-
-<p>
-Smart industrial automation and process control engineering solutions.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="stats">
-
-<div class="stats-grid">
-
-<div>
-<h2>10+</h2>
-<p>Years Experience</p>
-</div>
-
-<div>
-<h2>500+</h2>
-<p>Projects Completed</p>
-</div>
-
-<div>
-<h2>100+</h2>
-<p>Industrial Clients</p>
-</div>
-
-<div>
-<h2>24/7</h2>
-<p>Technical Support</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section" id="contact">
-
-<div class="contact-box">
-
-<h3>Contact Us</h3>
-
-<p>Email: info@ansox.in</p>
-
-<p>Phone: +91 XXXXX XXXXX</p>
-
-<p>Maharashtra, India</p>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Ansox Industries Pvt Ltd | All Rights Reserved
-
-</footer>
 
 </body>
-
 </html>
